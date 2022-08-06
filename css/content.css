@@ -1,0 +1,56 @@
+/* mise en forme de la zone de contenu */
+#globalContentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 1em;
+    background-color: var(--accent-color);
+    color: var(--textcolor-on-light);
+    border-radius: 10px;
+}
+
+.contentContainer:not(#defaultView) > :nth-child(2n){
+    border-top: solid 1px;
+}
+
+.formAddContainer{
+    min-width: 75%;
+    margin-bottom: 1em;
+}
+
+.contentContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentContainer form > input[type="submit"]{
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.contentContainer form > :nth-child(2n){
+    margin-bottom: 1em;
+}
+
+
+/* mise en forme des message de succes/erreur */
+.MessageValid {
+    color: limegreen;
+    text-decoration: none;
+}
+
+.MessageError {
+    color: red;
+}
+
+

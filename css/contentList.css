@@ -1,0 +1,138 @@
+/* mise en forme de la liste */
+.listGlobalContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.listGlobalContainer>h3{
+    width: 75%;
+}
+
+.listContainer{
+    min-width: 75%;
+    max-width: 100%;
+}
+
+/* mise en forme d'un listElement */
+
+.listElement{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+
+    border-radius: 10px;
+
+    background-color: var(--accent2-color);
+
+    margin: 1em 0;
+    padding: 2em;
+
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+}
+
+.listElement:hover{
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.listElement .infos{
+    margin-bottom: 1em;
+}
+
+.listElement .infos .infosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listElement .infos .infosContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5%;
+}
+
+.listElement .infos .infosContainer div p{
+    margin: 0;
+}
+
+.listElement .infos .infosContainer div p:first-child{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+
+.listElement .longText{
+    word-break: break-all;
+}
+
+.listElement > *+*{
+    border-top: solid 1px;
+}
+
+.listElement .actions{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+}
+
+.listElement .actions .action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listElement .actions .action p{
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+
+/* action button */
+.actionButton::before{
+    content: " ";
+    display: inline-block;
+    visibility: visible;
+    position: relative;
+    width: 2em;
+    height: 2em;
+    filter: none;
+    background-origin: content-box!important;
+    background-position: center!important;
+    transition: 0.3s;
+}
+
+.actionButton:hover::before{
+    filter: brightness(120%);
+}
+
+/* close button */
+.closeButton::before{
+    background: url('/img/close.png') no-repeat 0 0;
+    background-size: 2em 2em;
+}
+
+/* removeButton */
+.removeButton::before{
+    background: url('/img/poubelle.png') no-repeat 0 0;
+    background-size: 1.6em 1.6em;
+
+    padding: 0.2em;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* printButton */
+.printButton::before{
+    background: url('/img/print.png') no-repeat 0 0;
+    background-size: 1.6em 1.6em;
+
+    padding: 0.2em;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}

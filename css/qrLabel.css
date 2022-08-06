@@ -1,0 +1,65 @@
+/* mise en forme de l'impression des etiquettes */
+
+body #qrcode{
+    display: none;
+}
+
+
+@media print {
+    @page{
+        size: A4;
+    }
+
+    body > h1,
+    body .navbar,
+    body .contentContainer,
+    body .dontprint{
+        display: none;
+    }
+    
+    body, #globalContentContainer{
+        all: initial;
+    }
+    
+    #qrcode{
+        display: flex!important;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        width: 105mm;
+        height: 42mm;
+    
+        border: solid 2px;
+        border-radius: 25px;
+    }
+
+    #qrcode canvas{
+        width: 35mm;
+        padding: 0 2mm;
+    }
+
+    #qrcode>img{
+        width: 35mm;
+        padding: 0 2mm;
+    }
+    
+    #qrcode > div{
+        display: flex;
+        flex-direction: column;
+        min-height: 42mm;
+        justify-content: space-around;
+    }
+
+    #qrcode > div h2 {
+        margin: 0;
+    }
+
+    #qrcode > div p {
+        margin: 0;
+    }
+
+    #qrcode > div > p:last-child{
+        bottom: 0;
+    }
+}

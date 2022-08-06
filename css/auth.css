@@ -1,0 +1,26 @@
+/* mise en forme du formulaire de connexion */
+
+#formAuthContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+#authForm{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: var(--accent-color);
+    color: var(--textcolor-on-light);
+    border-radius: 10px;
+}
+
+#authForm > input[type="submit"]{
+    margin-top: 1em;
+}
+
+#authForm > :nth-child(2n){
+    margin-bottom: 1em;
+}

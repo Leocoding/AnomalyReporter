@@ -1,0 +1,70 @@
+/* mise en forme de la page de création de ticket */
+
+#userFormContainer{
+    max-width: 100%;
+}
+
+#userFormContainer #createTicket {
+    min-width: 80%;
+}
+
+#userFormContainer #infoRessourceTicket{
+    background-color: var(--accent2-color);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#userFormContainer #descAnomalieContainer{
+    margin: 1em 0;
+}
+
+#userFormContainer #descAnomalieContainer *{
+    width: 100%;
+}
+
+#userFormContainer #descAnomalieContainer textarea,
+#userFormContainer #descAnomalieContainer label{
+    width: calc(100% - 8px);
+}
+
+#userFormContainer #descAnomalieContainer label{
+    padding: 2px;
+}
+
+#userFormContainer #descAnomalieContainer textarea{
+    height: 4em;
+    resize: none;
+}
+
+#userFormContainer #descAnomalieContainer input[type='submit']{
+    margin-top: 0.5em;
+}
+
+
+#userFormContainer #anomaliesListGlobal{
+    background-color: var(--accent2-color);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#userFormContainer #anomaliesListGlobal .noAnomalie{
+    font-style: italic;
+}
+
+#userFormContainer #anomaliesList{
+    max-height: 20em;
+    overflow-y: auto;
+    background-color: var(--accent3-color);
+}
+
+#userFormContainer #anomaliesList p{
+    margin: 0;
+    padding: 5px;
+    word-break: break-all;
+}
+
+
+#userFormContainer #anomaliesList p:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}

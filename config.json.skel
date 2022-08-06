@@ -1,0 +1,13 @@
+{
+    "admin": {
+        "adminuser": "",
+        "adminpass": ""
+    },
+    "db": {
+        "dbname": "",
+        "dbhost": "",
+        "dbuser": "",
+        "dbpass": "",
+        "dbtableprefix": ""
+    }
+}

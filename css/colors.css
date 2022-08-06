@@ -1,0 +1,18 @@
+/* definition des couleurs utilisées dans l'application */
+
+:root{
+    --primary-color : rgb(63, 63, 63);
+    --secondary-color : rgb(110, 109, 109);
+    --tertiary-color : rgb(143, 143, 143);
+    --accent-color : var(--tertiary-color);
+    --accent2-color : rgb(189, 188, 188);
+    --accent3-color : rgb(224, 223, 223);
+
+    --textcolor-on-dark : #fff;
+    --textcolor-on-light : #000;
+
+    --button-color : var(--secondary-color);
+    --button-hover-color : var(--accent2-color);
+
+    --danger-color : rgb(207, 87, 87);
+}

@@ -1,0 +1,36 @@
+/* mise en forme de la page de configuration */
+
+#configForm{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    align-self: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#configForm input[type="submit"]{
+    width: fit-content;
+}
+
+#configForm fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1em;
+}
+
+#configForm fieldset label{
+    display: inline-block;
+    width: 210px;
+}
+
+#configForm fieldset input{
+    margin-bottom: 1em;
+}
+
+#configForm legend{
+    font-weight: bold;
+}

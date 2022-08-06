@@ -1,0 +1,45 @@
+/* mise en forme des boutons de pagination */
+
+.pageController {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.pageController a.button{
+    visibility: hidden;
+}
+
+.pageController a.numPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--textcolor-on-light);
+    border-left: none;
+    border-right: none;
+    background-color: var(--secondary-color);
+    color: var(--textcolor-on-light);
+    min-width: 1.75em;
+    height: 1.75em;
+}
+
+.pageController a.button::before{
+    content: " ";
+    display: inline-block;
+    visibility: visible;
+    position: relative;
+    background: url('/img/next.png') no-repeat 0 0;
+    background-color: var(--button-color);
+    border: solid 2px var(--textcolor-on-light);
+    border-radius: 0 5px 5px 0;
+    width: 1.75em;
+    height: 1.75em;
+    background-size: 1.75em 1.75em;
+}
+
+.pageController a.button.prev::before{
+    transform: rotateZ(180deg);
+}
+
+.pageController a.button:hover::before{
+    background-color: var(--button-hover-color);
+}
